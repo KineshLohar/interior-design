@@ -52,8 +52,8 @@ export const ContactForm = () => {
     if (!isMounted) return null;
 
     return (
-        <div className="w-full flex font-lato flex-col items-start justify-center tracking-wider">
-            <h2 className=" font-playfair text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-wider text-black mb-6">
+        <div className="w-full py-4 flex font-lato flex-col items-start justify-center tracking-wider">
+            <h2 className=" font-playfair text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-wider transform scale-x-125 text-black mb-6 pl-3 sm:pl-4 md:pl-5 lg:pl-6">
                 Get In Touch
             </h2>
             <Form {...form}>
@@ -111,7 +111,7 @@ export const ContactForm = () => {
                                                 <FormControl>
                                                     <RadioGroupItem value={option} className="hidden" />
                                                 </FormControl>
-                                                <FormLabel className={cn("font-medium tracking-wider rounded-lg transition duration-100 text-sm sm:text-base px-6 py-1.5 border-[1px] border-neutral-900",
+                                                <FormLabel className={cn("font-medium cursor-pointer tracking-wider rounded-lg transition duration-100 text-sm sm:text-base px-6 py-1.5 border-[1px] border-neutral-900",
                                                     field.value === option && 'bg-neutral-900 text-white/90'
                                                 )}>
                                                     {option}
