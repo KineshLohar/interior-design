@@ -1,0 +1,21 @@
+import Image from "next/image"
+import { ContactForm } from "./contact-form"
+
+
+export const ContactSection = () => {
+    return (
+        <div className="min-h-dvh w-full flex flex-col bg-[#E8E4E0]/90 md:flex-row md:items-stretch md:justify-between gap-4 md:gap-8 p-4 sm:p-8 md:p-12 lg:p-28">
+            <div className="relative w-full md:w-6/12 h-[400px] md:h-auto rounded-2xl overflow-hidden">
+                <Image
+                    src='/background.jpeg'
+                    alt="Contact section image"
+                    fill
+                    className="object-cover object-center"
+                />
+            </div>
+            <div className="w-full md:w-6/12">
+                <ContactForm />
+            </div>
+        </div>
+    )
+}
