@@ -16,7 +16,7 @@ import * as z from 'zod';
 
 const formSchema = z.object({
     fullName: z.string().min(1, "Full Name is required"),
-    email: z.string().min(1, "Email is required"),
+    email: z.string().min(1, "Email is required").email("Invalid email address"),
     type: z.enum(["Residential", "Commercial", "Other"], {
         errorMap: () => ({ message: "Please select a valid option." })
     }),
@@ -86,6 +86,7 @@ export const ContactForm = () => {
                                 <FormControl>
                                     <Input placeholder="johncena@gmail.com" {...field}
                                         disabled={isSubmitting}
+                                        type='email'
                                         className=" italic border-t-0 border-x-0 border-b-[1px] rounded-none bg-transparent 
                                          focus-visible:ring-0 border-black  dark:bg-transparent px-0"
                                     />
