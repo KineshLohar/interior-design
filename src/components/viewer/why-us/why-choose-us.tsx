@@ -45,12 +45,12 @@ export const WhyChooseUsSection = () => {
     return (
         <div className="w-full min-h-dvh p-4 py-10 sm:p-8 pb-24 sm:pt-16 sm:pb-24 md:p-12 md:py-24 lg:p-28 ">
             <div className="w-full flex flex-col items-center gap-4 text-center">
-                <span className="tracking-wide text-amber-300 font-medium text-sm sm:text-base">OUR EXPERTISE</span>
+                <span className="tracking-wide text-[#CBB57B] font-medium text-sm sm:text-base">OUR EXPERTISE</span>
                 <h2 className="w-full font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-normal duration-300 -mt-2">
                     What Sets Us Apart
                 </h2>
                 <Separator
-                    className="min-h-1 max-w-40 rounded-full bg-amber-400"
+                    className="min-h-1 max-w-40 rounded-full bg-[#CBB57B]"
                 />
                 <p className=" sm:max-w-xl md:max-w-2xl text-xs sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic expedita distinctio quas, aspernatur corporis autem tenetur nobis odit architecto, nemo vel exercitationem consequuntur similique consectetur fugiat nesciunt ipsam eos soluta!</p>
             </div>
@@ -63,7 +63,7 @@ export const WhyChooseUsSection = () => {
                                 key={item?.id}
                                 className="flex flex-col gap-3 items-stretch justify-center bg-neutral-900 p-8"
                             >
-                                <Icon className="h-10 w-10 sm:h-12 sm:w-12 text-amber-400" />
+                                <Icon className="h-10 w-10 sm:h-12 sm:w-12 text-[#CBB57B]" />
                                 <h3 className="text-xl font-semibold tracking-wider">{item?.title}</h3>
                                 <p className="text-xs md:text-sm text-zinc-200 tracking-wide">{item?.description}</p>
                             </div>

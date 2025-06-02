@@ -1,0 +1,105 @@
+[
+    {
+      "id": 1,
+      "title": "Residential Interior Design",
+      "description": "Tailored interior solutions to transform houses into dream homes with personalized style and functionality.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Commercial Interior Design",
+      "description": "Professional interior design services for offices, retail, hospitality, and more, aligned with brand identity.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "2D AutoCAD Drawings & Plans",
+      "description": "Precise architectural and interior plans using AutoCAD for accurate design implementation.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Custom Furniture Design & Fabrication",
+      "description": "Bespoke furniture pieces crafted to match your space and style perfectly.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "3D Wall Art & Feature Panels",
+      "description": "Unique wall designs and panels to add artistic depth and texture to interiors.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Full Renovation & Remodeling",
+      "description": "End-to-end renovation services to revamp and modernize any interior space.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Turnkey Fit-Outs (End-to-End Execution)",
+      "description": "Complete project execution from concept to delivery with minimal client involvement.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "Space Planning & Layout Optimization",
+      "description": "Efficient use of space to ensure functionality, comfort, and aesthetics.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 9,
+      "title": "Vastu-Compliant Layouts & Consultations",
+      "description": "Interior layouts designed according to Vastu Shastra for harmony and positive energy.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 10,
+      "title": "Color Consultation & Material Selection",
+      "description": "Expert guidance in choosing color schemes and materials to match the desired aesthetic and functionality.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 11,
+      "title": "Lighting Design & Specification",
+      "description": "Strategic lighting plans to enhance mood, functionality, and visual appeal.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 12,
+      "title": "On-Site Implementation & Project Management",
+      "description": "Professional supervision to ensure timely and quality execution of all interior works.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 13,
+      "title": "In-House Painting & Finishing",
+      "description": "Top-notch painting and surface finishing services to add the final touch of elegance.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 14,
+      "title": "Furniture Procurement & Contracting",
+      "description": "Efficient sourcing and contracting of quality furniture as per design requirements.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 15,
+      "title": "Budgeting & Cost Estimation",
+      "description": "Detailed cost analysis to help clients make informed decisions within their budget.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 16,
+      "title": "Custom False Ceiling Design & Installation",
+      "description": "Stylish and functional false ceilings that complement the interior design.",
+      "image": "/background.jpeg"
+    },
+    {
+      "id": 17,
+      "title": "Premium Flooring Design & Installation",
+      "description": "High-quality flooring solutions tailored to design and durability needs.",
+      "image": "/background.jpeg"
+    }
+  ]
+  
