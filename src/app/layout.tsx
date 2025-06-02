@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased ${playfair.variable} ${inter.variable} ${lato.variable} vsc-initialized`}
+        className={`antialiased scroll-smooth ${playfair.variable} ${inter.variable} ${lato.variable} vsc-initialized`}
       >
         {children}
       </body>

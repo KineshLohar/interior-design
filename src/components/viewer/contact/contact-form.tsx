@@ -53,7 +53,7 @@ export const ContactForm = () => {
 
     return (
         <div className="w-full py-4 flex font-lato flex-col items-start justify-center tracking-wider">
-            <h2 className=" font-playfair text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-wider transform scale-x-125 text-black mb-6 pl-3 sm:pl-4 md:pl-5 lg:pl-6">
+            <h2 className=" font-playfair text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-wider transform scale-x-125 text-black mb-6 pl-4 md:pl-6 lg:pl-7">
                 Get In Touch
             </h2>
             <Form {...form}>

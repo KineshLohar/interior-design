@@ -43,7 +43,7 @@ const features = [
 
 export const WhyChooseUsSection = () => {
     return (
-        <div className="w-full min-h-dvh p-4 py-10 sm:p-8 pb-24 sm:pt-16 sm:pb-24 md:p-12 md:py-24 lg:p-28 ">
+        <div className="w-full min-h-screen p-4 py-10 sm:p-8 pb-24 sm:pt-16 sm:pb-24 md:p-12 md:py-24 lg:p-28 ">
             <div className="w-full flex flex-col items-center gap-4 text-center">
                 <span className="tracking-wide text-[#CBB57B] font-medium text-sm sm:text-base">OUR EXPERTISE</span>
                 <h2 className="w-full font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-normal duration-300 -mt-2">

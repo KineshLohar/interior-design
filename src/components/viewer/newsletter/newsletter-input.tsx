@@ -44,7 +44,7 @@ export const NewsletterInput = () => {
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(handleSubmit)}>
+            <form onSubmit={form.handleSubmit(handleSubmit)} className="w-full">
                 <FormField
                     name="email"
                     control={form.control}
