@@ -11,14 +11,14 @@ export const HeroSection = () => {
                 aria-hidden="true"
             />
             <div className="z-0 flex flex-col items-start justify-center">
-                <h1 className="reveal text-4xl sm:text-5xl md:text-6xl scale-y-105 tracking-wide font-bold">
+                <h1 className=" text-4xl sm:text-5xl md:text-6xl scale-y-105 tracking-wide font-bold">
                     Crafting Interiors
                     <br />
                     Since 2003
                 </h1>
                 <p
                     data-delay="300ms"
-                    className="reveal mt-2 text-sm sm:text-base lg:text-lg text-zinc-200 font-lato"
+                    className=" mt-2 text-sm sm:text-base lg:text-lg text-zinc-200 font-lato"
                 >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
@@ -27,7 +27,7 @@ export const HeroSection = () => {
                 >
                     <div
                         data-delay="500ms"
-                        className="reveal relative group mt-4 px-4 py-1.5 sm:px-6 sm:py-2 bg-transparent border-[1px] font-semibold border-white transition duration-300 text-xs sm:text-sm md:text-base flex items-center gap-2 overflow-hidden"
+                        className=" relative group mt-4 px-4 py-1.5 sm:px-6 sm:py-2 bg-transparent border-[1px] font-semibold border-white transition duration-300 text-xs sm:text-sm md:text-base flex items-center gap-2 overflow-hidden"
                     >
                         Explore Projects <MoveRight className="w-7 h-7 transition duration-300" />
                         {/* <span className="absolute -z-10 inset-0 bg-zinc-50 -translate-x-full group-hover:translate-x-0 transition duration-300 " /> */}
