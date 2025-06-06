@@ -1,9 +1,10 @@
 'use client'
 
 import { Button } from "@/components/ui/button"
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
+import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { zodResolver } from "@hookform/resolvers/zod"
+import axios from "axios"
 import { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
@@ -27,7 +28,7 @@ export const NewsletterInput = () => {
 
     const handleSubmit = async (values: z.infer<typeof formSchema>) => {
         try {
-            // await axios.post('/api/contact', values);
+            await axios.post('/api/contact', values);
             await new Promise<void>((resolve) => setTimeout(() => {
                 console.log("RESPONSE");
                 resolve();

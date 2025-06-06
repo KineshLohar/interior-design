@@ -34,19 +34,6 @@ const Slide = ({ slide, index, current, onClick }: SlideProps) => {
     return () => cancelAnimationFrame(frameRef.current);
   }, []);
 
-  const handleMouseMove = (e: React.MouseEvent) => {
-    const el = slideRef.current;
-    if (!el) return;
-    const rect = el.getBoundingClientRect();
-    xRef.current = e.clientX - (rect.left + rect.width / 2);
-    yRef.current = e.clientY - (rect.top + rect.height / 2);
-  };
-
-  const handleMouseLeave = () => {
-    xRef.current = 0;
-    yRef.current = 0;
-  };
-
   // Fade in the image once it loads:
   const onImageLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
     e.currentTarget.style.opacity = "1";
