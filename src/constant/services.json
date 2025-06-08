@@ -3,102 +3,84 @@
     "id": 1,
     "title": "Residential Interior Design",
     "description": "Elegant, personalized interiors crafted for homes, apartments, and private residences—balancing aesthetics, comfort, and function.",
-    "image": "/background.jpeg"
+    "image": "/services/1.jpg"
   },
   {
     "id": 2,
     "title": "Commercial Interior Design",
     "description": "Functional and branded environments for offices, retail stores, and commercial spaces—designed to impress and perform.",
-    "image": "/background.jpeg"
+    "image": "/services/2.jpg"
   },
   {
     "id": 3,
     "title": "2D AutoCAD Drawings & Plans",
     "description": "Accurate and professional CAD layouts to visualize space planning, electricals, plumbing, and structural details for approvals and execution.",
-    "image": "/background.jpeg"
+    "image": "/services/3.jpg"
   },
   {
     "id": 4,
     "title": "Custom Furniture Design & Fabrication",
     "description": "Tailor-made furniture solutions designed to fit your space and style—crafted with precision by our in-house artisans.",
-    "image": "/background.jpeg"
+    "image": "/services/4.jpg"
   },
   {
     "id": 5,
     "title": "3D Wall Art & Feature Panels",
     "description": "Striking 3D wall accents and panels that add depth, texture, and personality to any interior setting.",
-    "image": "/background.jpeg"
+    "image": "/services/5.jpg"
   },
   {
     "id": 6,
     "title": "Full Renovation & Remodeling",
     "description": "Transform your space with complete renovation solutions—from layout reconfiguration to finishing touches.",
-    "image": "/background.jpeg"
+    "image": "/services/6.jpg"
   },
   {
     "id": 7,
     "title": "Turnkey Fit-Outs (End-to-End Execution)",
     "description": "From design to handover, we handle everything—ensuring seamless coordination, timelines, and quality control.",
-    "image": "/background.jpeg"
+    "image": "/services/7.jpg"
   },
   {
     "id": 8,
     "title": "Space Planning & Layout Optimization",
     "description": "Maximize space efficiency with smart, user-centric layouts tailored to your lifestyle or business needs.",
-    "image": "/background.jpeg"
+    "image": "/services/8.jpg"
   },
   {
     "id": 9,
     "title": "Vastu-Compliant Layouts & Consultations",
     "description": "Integrate traditional vastu principles into modern design for enhanced harmony, energy flow, and well-being.",
-    "image": "/background.jpeg"
+    "image": "/services/9.jpg"
   },
   {
     "id": 10,
     "title": "Color Consultation & Material Selection",
     "description": "Expert guidance in choosing the right color schemes, textures, and finishes to elevate your interiors.",
-    "image": "/background.jpeg"
+    "image": "/services/10.jpg"
   },
   {
     "id": 11,
     "title": "Lighting Design & Specification",
     "description": "Functional and ambient lighting plans that enhance mood, highlight features, and optimize energy use.",
-    "image": "/background.jpeg"
-  },
-  {
-    "id": 12,
-    "title": "On-Site Implementation & Project Management",
-    "description": "End-to-end execution with dedicated supervision to ensure timely delivery, flawless execution, and quality assurance.",
-    "image": "/background.jpeg"
+    "image": "/services/11.jpg"
   },
   {
     "id": 13,
     "title": "In-House Painting & Finishing",
     "description": "High-quality painting, polishing, and finishing by trained professionals for walls, ceilings, and furniture.",
-    "image": "/background.jpeg"
-  },
-  {
-    "id": 14,
-    "title": "Furniture Procurement & Contracting",
-    "description": "Sourcing high-quality furniture and coordinating vendor execution to align with the design vision and budget.",
-    "image": "/background.jpeg"
-  },
-  {
-    "id": 15,
-    "title": "Budgeting & Cost Estimation",
-    "description": "Transparent, well-structured cost estimates and material breakdowns to help you plan with clarity and confidence.",
-    "image": "/background.jpeg"
+    "image": "/services/13.jpg"
   },
   {
     "id": 16,
     "title": "Custom False Ceiling Design & Installation",
     "description": "Modern ceiling solutions including POP, gypsum, and recessed lighting designs that add elegance and functionality.",
-    "image": "/background.jpeg"
+    "image": "/services/12.jpg"
   },
   {
     "id": 17,
     "title": "Premium Flooring Design & Installation",
     "description": "Expert flooring solutions with materials like wood, stone, vinyl, and tile—installed with flawless craftsmanship.",
-    "image": "/background.jpeg"
+    "image": "/services/14.jpg"
   }
 ]
