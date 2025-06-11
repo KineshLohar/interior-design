@@ -25,6 +25,7 @@ const formSchema = z.object({
 export const ContactForm = () => {
 
     const [isMounted, setIsMounted] = useState(false);
+    const [successMessage, setSuccessMessage] = useState(false);
 
     useEffect(() => setIsMounted(true), []);
 
@@ -42,6 +43,10 @@ export const ContactForm = () => {
         try {
             await axios.post('/api/contact', values);
             form.reset();
+            setSuccessMessage(true);
+            setTimeout(() => {
+                setSuccessMessage(false);
+            }, 10000)
         } catch (error) {
             console.log("ERROR SENDING CONTACT REQUEST", error);
         }
@@ -69,8 +74,8 @@ export const ContactForm = () => {
                                 <FormControl>
                                     <Input placeholder="Your Name" {...field}
                                         disabled={isSubmitting}
-                                        className="italic border-t-0 border-x-0 border-b-[1px] rounded-none bg-transparent 
-                                         focus-visible:ring-0 border-black px-0"
+                                        className="italic border-t-0 text-black font-medium border-x-0 border-b-[1px] rounded-none bg-transparent 
+                                         focus-visible:ring-0 border-black px-0 autofill-black"
                                     />
                                 </FormControl>
                                 <FormMessage />
@@ -88,7 +93,7 @@ export const ContactForm = () => {
                                         disabled={isSubmitting}
                                         type='email'
                                         className=" italic border-t-0 border-x-0 border-b-[1px] rounded-none bg-transparent 
-                                         focus-visible:ring-0 border-black  dark:bg-transparent px-0"
+                                         focus-visible:ring-0 border-black font-medium  dark:bg-transparent px-0 autofill-black "
                                     />
                                 </FormControl>
                                 <FormMessage />
@@ -136,14 +141,21 @@ export const ContactForm = () => {
                                         placeholder="Describe your message..."
                                         disabled={isSubmitting}
                                         {...field}
-                                        className="italic resize-none border-t-0 border-x-0 border-b-[1px] rounded-none bg-transparent 
-                                         focus-visible:ring-0 border-black dark:bg-transparent px-0"
+                                        className="italic resize-none border-t-0 font-medium border-x-0 border-b-[1px] rounded-none bg-transparent 
+                                         focus-visible:ring-0 border-black dark:bg-transparent px-0 autofill-black"
                                     />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
                         )}
                     />
+                    {
+                        successMessage &&
+                        <div className="text-green-500 px-4 md:text-center mt-8 mb-2 font-medium md:-mb-8">
+                            🎉 Your message has been sent successfully! We will get back to you soon.
+                        </div>
+
+                    }
                     <div className="w-full flex items-center justify-end mt-4">
                         <Button type="submit" disabled={isSubmitting}
                             className="capitalize bg-transparent hover:bg-neutral-900 hover:text-white text-black rounded-lg relative group text-xs md:text-sm lg:text-base border border-black  px-6 py-2 font-bold tracking-wider cursor-pointer overflow-hidden"

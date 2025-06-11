@@ -155,3 +155,19 @@ input:-webkit-autofill:active {
   -webkit-text-fill-color: #e4e4e7 !important;
   transition: background-color 9999s ease-in-out 0s !important;
 }
+
+
+input.autofill-black:-webkit-autofill {
+  -webkit-text-fill-color: black !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  background-color: transparent !important;
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
+/* Autofill for white text */
+input.autofill-white:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  background-color: transparent !important;
+  transition: background-color 9999s ease-in-out 0s !important;
+}
