@@ -25,23 +25,23 @@ export const ProjectsSection = () => {
         <div className="relative w-full min-h-screen p-4 py-10 sm:p-8 pb-24 sm:pt-16 sm:pb-24 md:p-12 md:py-24 lg:p-28 space-y-8">
             {/* <div className="absolute top-0 left-0 right-0 sm:h-28 bg-gradient-to-b from-black via-black/30 to-transparent" /> */}
             <div className="flex flex-col gap-4 md:flex-row md:justify-between">
-                <h2 className="w-full font-semibold md:w-6/12 text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-normal duration-300">
+                <h2 className="reveal w-full font-semibold md:w-6/12 text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-normal duration-300">
                     Explore Our Work <br />Collection
                 </h2>
                 <div className="flex flex-col-reverse md:flex-col gap-4 text-left md:text-right md:items-end w-full md:w-6/12 mt-4 ">
                     <Link href='/projects'>
                         <Button
                             type="button"
-                            className=" w-36 py-5 rounded-md tracking-wider cursor-pointer bg-transparent border-[1px] border-zinc-100"
+                            className="reveal w-36 py-5 rounded-md tracking-wider cursor-pointer bg-transparent border-[1px] border-zinc-100"
                         >
                             Our Work <ArrowRight />
                         </Button>
                     </Link>
-                    <p className="text-xs sm:text-sm font-lato text-zinc-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, eum libero impedit odio blanditiis atque eligendi minima facilis possimus sint quis ducimus.</p>
+                    <p className="reveal text-xs sm:text-sm font-lato text-zinc-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, eum libero impedit odio blanditiis atque eligendi minima facilis possimus sint quis ducimus.</p>
                 </div>
             </div>
             <div className="w-full flex flex-col gap-12 md:gap-6 items-stretch md:flex-row md:items-stretch md:justify-between">
-                <div className="h-[600px] w-full md:w-4/12 space-y-4">
+                <div className="reveal h-[600px] w-full md:w-4/12 space-y-4">
                     <div className="group relative w-full h-5/12 overflow-hidden cursor-pointer">
                         <Image
                             src='/background.jpeg'
@@ -68,7 +68,7 @@ export const ProjectsSection = () => {
                         />
                     </div>
                 </div>
-                <div className="h-[600px] w-full md:w-4/12 space-y-4">
+                <div className="reveal h-[600px] w-full md:w-4/12 space-y-4">
                     <div className="group relative w-full h-7/12 overflow-hidden cursor-pointer">
                         <Image
                             src='/background.jpeg'
@@ -94,7 +94,7 @@ export const ProjectsSection = () => {
                         />
                     </div>
                 </div>
-                <div className="h-[600px] w-full md:w-4/12 space-y-4">
+                <div className="reveal h-[600px] w-full md:w-4/12 space-y-4">
                     <div className="group relative w-full h-5/12 overflow-hidden cursor-pointer">
                         <Image
                             src='/background.jpeg'

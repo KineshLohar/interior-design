@@ -156,7 +156,7 @@ export function Carousel({ slides }: CarouselProps) {
   };
 
   return (
-    <div className="relative mt-16 w-[90vw] h-[75dvw] sm:w-[70vmin] sm:h-[70vmin] mx-auto " aria-labelledby={`carousel-heading-${id}`}>
+    <div className="reveal relative mt-16 w-[90vw] h-[75dvw] sm:w-[70vmin] sm:h-[70vmin] mx-auto " aria-labelledby={`carousel-heading-${id}`}>
       {/* -------------- SLIDES WRAPPER -------------- */}
       <ul
         className="absolute top-0 left-0 flex mx-[-4vmin] transition-transform duration-1000 ease-in-out overflow-hidden"

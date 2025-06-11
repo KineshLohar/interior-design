@@ -9,7 +9,7 @@ export const ServicesList = () => {
             {
                 allServices?.map(item => (
                     <div key={item?.id}
-                        className='flex flex-col items-stretch tracking-wide '
+                        className='reveal flex flex-col items-stretch tracking-wide '
                     >
                         <div className='relative w-full h-48 overflow-hidden'>
                             <Image

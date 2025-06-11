@@ -40,9 +40,9 @@ const slideData = [
 export const Testimonials = () => {
     return (
         <section className="relative w-full flex flex-col items-center text-center bg-gradient-to-tl from-[#F4ECF7] via-[#E4D4C8] to-[#F4ECF7] text-black p-4 py-10 sm:p-8 pb-24 sm:pt-16 sm:pb-24 md:p-12 md:py-24 lg:p-24 overflow-hidden">
-            <span className="text-lg font-semibold tracking-wider text-zinc-900">Testimonials</span>
-            <Separator className="mt-2 mb-4 w-full bg-zinc-600 max-w-32 min-h-[3px] rounded-full" />
-            <h2 className="w-full font-semibold md:w-6/12 text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-normal duration-300">
+            <span className="reveal text-lg font-semibold tracking-wider text-zinc-900">Testimonials</span>
+            <Separator className="reveal mt-2 mb-4 w-full bg-zinc-600 max-w-32 min-h-[3px] rounded-full" />
+            <h2 className="reveal w-full font-semibold md:w-6/12 text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-normal duration-300">
                 Hear Directly from Our Clients
             </h2>
             <Carousel

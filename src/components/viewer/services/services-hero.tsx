@@ -13,9 +13,9 @@ export const ServicesHero = () => {
                 className="absolute -z-20 inset-0 bg-center bg-cover bg-black/40"
                 aria-hidden="true"
             />
-            <h1 className="text-4xl sm:text-5xl md:text-6xl scale-y-105 tracking-wide font-bold">Our Services</h1>
-            <Separator className="w-full max-w-32 min-h-[3px] rounded-full bg-[#CBB57B]" />
-            <p className=" sm:max-w-xl md:max-w-2xl lg:max-w-3xl text-xs sm:text-sm md:text-base font-lato font-medium">
+            <h1 className="reveal text-4xl sm:text-5xl md:text-6xl scale-y-105 tracking-wide font-bold">Our Services</h1>
+            <Separator className="reveal w-full max-w-32 min-h-[3px] rounded-full bg-[#CBB57B]" />
+            <p className="reveal sm:max-w-xl md:max-w-2xl lg:max-w-3xl text-xs sm:text-sm md:text-base font-lato font-medium">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae ducimus perferendis, accusantium, earum laboriosam amet, maxime quam quod aspernatur reiciendis assumenda esse eaque aperiam ullam harum mollitia expedita laborum ab.
             </p>
         </section>

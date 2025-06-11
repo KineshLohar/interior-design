@@ -1,41 +1,87 @@
-'use client';
+// src/components/animations/fadeup-batcher.tsx
+"use client";
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export default function RevealObserver() {
+gsap.registerPlugin(ScrollTrigger);
+
+export default function FadeUpBatcher() {
+  const pathname = usePathname();
+  const initializedRef = useRef<Set<HTMLElement>>(new Set());
+
   useEffect(() => {
-    const revealElements = document.querySelectorAll('.reveal');
+    const initializeAnimations = () => {
+      document.querySelectorAll<HTMLElement>(".reveal").forEach((el) => {
+        if (initializedRef.current.has(el)) return;
+        initializedRef.current.add(el);
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const target = entry.target as HTMLElement;
+        const delay    = parseFloat(el.dataset.fadeDelay    ?? "0");
+        const duration = parseFloat(el.dataset.fadeDuration ?? "0.3");
+        const yOffset  = parseFloat(el.dataset.fadeYOffset  ?? "50");
 
-          if (entry.isIntersecting) {
-            const delay = target.dataset.delay;
-            if (delay) {
-              // Only apply delay to opacity and transform
-              target.style.transitionDelay = `${delay}, ${delay}`;
-              target.style.transitionProperty = 'opacity, transform';
-            }
-
-            target.classList.add('active');
-          } else {
-            target.classList.remove('active');
-            target.style.transitionDelay = '';
-            target.style.transitionProperty = '';
-          }
+        // Initial CSS
+        gsap.set(el, {
+          opacity: 0,
+          y: yOffset,
+          willChange: "transform, opacity",
         });
-      },
-      { threshold: 0.1 }
-    );
 
-    revealElements.forEach((el) => observer.observe(el));
+        // Build the tween (paused)
+        const tween = gsap.fromTo(
+          el,
+          { opacity: 0, y: yOffset },
+          {
+            opacity: 1,
+            y: 0,
+            delay,
+            duration,
+            ease: "power2.out",
+            paused: true,
+          }
+        );
+
+        // Create ScrollTrigger
+        ScrollTrigger.create({
+          trigger: el,
+          start: "top 100%",
+          end: "bottom 10%",
+          onEnter:      () => tween.play(),
+          onLeaveBack:  () => tween.reverse(),
+          onEnterBack:  () => tween.play(),
+        });
+      });
+    };
+
+    // Schedule initialization during idle or next tick
+    let handleId: number;
+    if (typeof window.requestIdleCallback === "function") {
+      handleId = window.requestIdleCallback(initializeAnimations, { timeout: 200 });
+    } else {
+      handleId = window.setTimeout(initializeAnimations, 200);
+    }
 
     return () => {
-      revealElements.forEach((el) => observer.unobserve(el));
+      // Cleanup triggers for any elements that were removed
+      initializedRef.current.forEach((el) => {
+        if (!document.body.contains(el)) {
+          ScrollTrigger.getAll()
+            .filter((st) => st.trigger === el)
+            .forEach((st) => st.kill());
+          initializedRef.current.delete(el);
+        }
+      });
+
+      // Cancel the idle callback or timeout
+      if (typeof window.cancelIdleCallback === "function") {
+        window.cancelIdleCallback(handleId);
+      } else {
+        clearTimeout(handleId);
+      }
     };
-  }, []);
+  }, [pathname]); // rerun when route changes
 
   return null;
 }
