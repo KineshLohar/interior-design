@@ -14,7 +14,7 @@ export const HeroSection = () => {
                 <h1 className=" text-4xl sm:text-5xl md:text-6xl scale-y-105 tracking-wide font-bold">
                     Crafting Interiors
                     <br />
-                    Since 2003
+                    Since 2001
                 </h1>
                 <p
                     data-delay="300ms"
